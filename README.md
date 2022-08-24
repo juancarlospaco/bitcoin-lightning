@@ -15,6 +15,19 @@
 ![](https://img.shields.io/github/last-commit/juancarlospaco/bitcoin-lightning?style=for-the-badge "Commits")
 
 
+# Design
+
+- It does not use anything from Nim standard library, very future-proof.
+- HTTPS JSON REST API, KISS.
+
+
+# See also
+
+- https://github.com/juancarlospaco/binance#binance
+- https://github.com/juancarlospaco/tradingview#tradingview
+- https://github.com/juancarlospaco/cloudbet#cloudbet
+
+
 # Stars
 
 ![](https://starchart.cc/juancarlospaco/bitcoin-lightning.svg)

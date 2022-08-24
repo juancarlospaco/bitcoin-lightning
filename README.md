@@ -1,4 +1,4 @@
-# Bitcoin Lightning client :thunder:
+# Bitcoin Lightning client
 
 - Open-source zero-fee instant micropayments platform.
 

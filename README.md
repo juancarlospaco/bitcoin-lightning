@@ -17,6 +17,17 @@
 ![](https://camo.githubusercontent.com/2103250a9d68b0afe02ddd6f455666355a3fda21fd90862645ec043efea92055/68747470733a2f2f692e696d6775722e636f6d2f476936626e334c2e6a7067 "DIY cardboard offline Bitcoin ATMs")
 
 
+# Example
+
+```nim
+import bitcoinlightning
+let client: BitcoinLightning = newBitcoinLightning(apiKey = "YOUR_API_KEY_HERE")
+echo client.getWallet()                        # Get your wallet.
+echo client.getInvoice(amount = 666.Positive)  # Sell.
+echo client.payInvoice("YOUR_INVOICE_HERE")    # Pay.
+```
+
+
 # Design
 
 - It does not use anything from Nim standard library, very future-proof.

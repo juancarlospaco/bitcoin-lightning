@@ -18,7 +18,7 @@
 # Design
 
 - It does not use anything from Nim standard library, very future-proof.
-- HTTPS JSON REST API, KISS.
+- HTTPS JSON REST API, KISS. Zero dependencies, any target.
 
 
 # See also

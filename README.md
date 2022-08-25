@@ -6,7 +6,7 @@
 
 ![](https://raw.githubusercontent.com/juancarlospaco/bitcoin-lightning/nim/screenshot.png "Send, receive, withdraw and more")
 
-![](plugins.jpg)
+![](https://raw.githubusercontent.com/juancarlospaco/bitcoin-lightning/nim/plugins.jpg "Tips, Donos, Paywalls, Bots, Tickets, Livestreams, Offline-Shop via plugins")
 
 ![](https://img.shields.io/github/languages/top/juancarlospaco/bitcoin-lightning?style=for-the-badge)
 ![](https://img.shields.io/github/stars/juancarlospaco/bitcoin-lightning?style=for-the-badge)

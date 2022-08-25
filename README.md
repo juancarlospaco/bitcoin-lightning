@@ -36,6 +36,7 @@ echo client.payInvoice("YOUR_INVOICE_HERE")    # Pay.
 
 - It does not use anything from Nim standard library, very future-proof.
 - HTTPS JSON REST API, KISS. 1 file, zero dependencies, any target.
+- Simple API, all functions with 2 arguments max.
 
 
 # See also

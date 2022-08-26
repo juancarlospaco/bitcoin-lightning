@@ -18,7 +18,18 @@
 
 # Offline
 
+- DIY cardboard offline Bitcoin ATMs, Arduino/RaspberryPi.
+
 ![](https://camo.githubusercontent.com/2103250a9d68b0afe02ddd6f455666355a3fda21fd90862645ec043efea92055/68747470733a2f2f692e696d6775722e636f6d2f476936626e334c2e6a7067 "DIY cardboard offline Bitcoin ATMs")
+
+https://user-images.githubusercontent.com/1653275/136722218-10bc7a5a-7194-4a38-8a54-86825bab704e.mp4
+
+
+# Shop
+
+- Rural or mobile shops just need 1 QR, works even without internet (invoice via SMS) or electricity (printed QR or URL).
+
+https://user-images.githubusercontent.com/1653275/166477530-63653087-dd5e-4843-ab64-79cfcb339fcf.mp4
 
 
 # Example

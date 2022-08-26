@@ -27,9 +27,15 @@
 import bitcoinlightning
 let client: BitcoinLightning = newBitcoinLightning(apiKey = "YOUR_API_KEY_HERE")
 echo client.getWallet()                        # Get your wallet.
-echo client.getInvoice(amount = 666.Positive)  # Sell.
-echo client.payInvoice("YOUR_INVOICE_HERE")    # Pay.
+echo client.getInvoice(amount = 666.Positive)  # Receive (Sell).
+echo client.payInvoice("YOUR_INVOICE_HERE")    # Send (Pay).
 ```
+
+
+# ELI5
+
+- **Receive money** with 1 new Bitcoin Lightning incoming invoice, thats just 1 `string` (Link or QR too).
+- **Send money** with 1 new Bitcoin Lightning outgoing invoice, thats just 1 `string` (Link or QR too).
 
 
 # Design

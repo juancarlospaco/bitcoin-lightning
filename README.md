@@ -60,7 +60,7 @@ echo client.payInvoice("YOUR_INVOICE_HERE")    # Send (Pay).
   Bitcoin Lightning is decentralized, so theres multiple services,
   but this way was the simplest and recommended approach as of 2022,
   if you just want to build something that can be monetized quickly.
-  I investigated to use https://t.me/lntxbot but it has no HTTP API.
+  I investigated to use lntxbot but it has no HTTP API.
   I investigated to use Bitrefill but it has no HTTP API.
   I investigated to use Binance but it has no Lightning API.
   Anyway the idea of the Lightning network is that the API server does not really matter,

@@ -69,6 +69,25 @@ echo client.payInvoice("YOUR_INVOICE_HERE")    # Send (Pay).
 </details>
 
 
+# FAQ
+
+- I try to send a million or hundred USD/EUR and it fails?
+
+It is a **lightweight API for MICROpayments**, use Bitcoin onchain for big amounts.
+
+- I need to generate QR?
+
+https://github.com/ThomasTJdev/nim_qr#examples
+
+- I need more features, like other coins and more?
+
+https://github.com/juancarlospaco/binance#binance
+
+- Is this a web app?
+
+HTTPS JSON REST API client.
+
+
 # See also
 
 - https://github.com/juancarlospaco/binance#binance

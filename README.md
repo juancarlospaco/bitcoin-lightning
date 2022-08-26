@@ -38,6 +38,14 @@ echo client.payInvoice("YOUR_INVOICE_HERE")    # Pay.
 - HTTPS JSON REST API, KISS. 1 file, zero dependencies, any target.
 - Simple API, all functions with 2 arguments max.
 
+<details>
+  <summary> Disclaimer </summary>
+  Bitcoin Lightning is decentralized, so theres multiple services,
+  but this way was the simplest and recommended approach as of 2022,
+  if you just want to build something that can be monetized quickly.
+  In the future, if better services appear, then the library can be changed.
+</details>
+
 
 # See also
 

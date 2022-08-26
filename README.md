@@ -52,6 +52,8 @@ echo client.payInvoice("YOUR_INVOICE_HERE")    # Send (Pay).
   I investigated to use https://t.me/lntxbot but it has no HTTP API.
   I investigated to use Bitrefill but it has no HTTP API.
   I investigated to use Binance but it has no Lightning API.
+  Anyway the idea of the Lightning network is that the API server does not really matter,
+  because you can just send to any other Lightning wallet anywhere.
   In the future, if better services appear, then the library can be changed.
 </details>
 

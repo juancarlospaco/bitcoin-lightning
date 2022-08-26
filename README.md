@@ -27,7 +27,7 @@ https://user-images.githubusercontent.com/1653275/136722218-10bc7a5a-7194-4a38-8
 
 # Shop
 
-- Rural or mobile shops just need 1 QR, works even without internet (invoice via SMS) or electricity (printed QR or URL).
+- Rural or mobile shops just need 1 QR, works even without internet (invoice via SMS) or electricity (QR or URL).
 
 https://user-images.githubusercontent.com/1653275/166477530-63653087-dd5e-4843-ab64-79cfcb339fcf.mp4
 

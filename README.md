@@ -34,14 +34,14 @@ echo client.payInvoice("YOUR_INVOICE_HERE")    # Send (Pay).
 
 # ELI5
 
-- **Receive money** with 1 new Bitcoin Lightning incoming invoice, thats just 1 `string` (Link or QR too).
-- **Send money** with 1 new Bitcoin Lightning outgoing invoice, thats just 1 `string` (Link or QR too).
+- **Receive money** with 1 new Bitcoin Lightning incoming invoice, thats just 1 `string` (or Link, or QR).
+- **Send money** with 1 new Bitcoin Lightning outgoing invoice, thats just 1 `string` (or Link, or QR).
 
 
 # Design
 
 - It does not use anything from Nim standard library, very future-proof.
-- HTTPS JSON REST API, KISS. 1 file, zero dependencies, any target.
+- HTTPS JSON REST API, KISS. 1 file, <100 lines, zero dependencies, any target.
 - Simple API, all functions with 2 arguments max.
 
 <details>

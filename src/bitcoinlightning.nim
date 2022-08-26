@@ -14,7 +14,6 @@ template defaultHeaders*(self: BitcoinLightning): array[3, (string, string)] =
   [("Content-Type", "application/json"), ("Accept", "application/json"), ("X-API-Key", self.apiKey)]
 
 func newBitcoinLightning*(apiKey: string): BitcoinLightning =
-  assert apiKey.len >= 32, "Bitcoin Lightning API key must be >= 32 char."
   BitcoinLightning(apiKey: apiKey)
 
 proc getWallet*(self: BitcoinLightning): tuple[metod: HttpMethod, url: Uri, headers: array[3, (string, string)], body: string] =
@@ -30,6 +29,7 @@ proc getInvoice*(self: BitcoinLightning; amount: Positive): tuple[metod: HttpMet
 
 proc payInvoice*(self: BitcoinLightning; bolt11: string): tuple[metod: HttpMethod, url: Uri, headers: array[3, (string, string)], body: string] =
   ## Create 1 new Bitcoin Lightning incoming invoice, API returns `payment_hash` string.
+  ## * To understand whats `bolt11` see https://www.bolt11.org
   assert bolt11.len > 0, "paymentHash must not be empty string."
   var bodi = """{"out":true,"bolt11":""""
   bodi.add bolt11
@@ -51,7 +51,7 @@ proc getCurrencies*(self: BitcoinLightning): tuple[metod: HttpMethod, url: Uri, 
   ## Get a list of all FIAT currencies supported by Bitcoin Lightning, API returns an array of strings.
   result = (metod: HttpGet, url: parseUri("https://legend.lnbits.com/api/v1/currencies"), headers: self.defaultHeaders(), body: "")
 
-proc sat2fiat*(self: BitcoinLightning; amount: Positive; currency: Fiat): tuple[metod: HttpMethod, url: Uri, headers: array[3, (string, string)], body: string] =
+proc satToFiat*(self: BitcoinLightning; amount: Positive; currency: Fiat): tuple[metod: HttpMethod, url: Uri, headers: array[3, (string, string)], body: string] =
   ## Sats to FIAT.
   var bodi = """{"from":"sat","to":""""
   bodi.add $currency
@@ -60,7 +60,7 @@ proc sat2fiat*(self: BitcoinLightning; amount: Positive; currency: Fiat): tuple[
   bodi.add '}'
   result = (metod: HttpPost, url: parseUri("https://legend.lnbits.com/api/v1/conversion"), headers: self.defaultHeaders(), body: "")
 
-proc fiat2sat*(self: BitcoinLightning; amount: Positive; currency: Fiat): tuple[metod: HttpMethod, url: Uri, headers: array[3, (string, string)], body: string] =
+proc fiatToSat*(self: BitcoinLightning; amount: Positive; currency: Fiat): tuple[metod: HttpMethod, url: Uri, headers: array[3, (string, string)], body: string] =
   ## FIAT to Sats.
   var bodi = """{"to":"sat","from":""""
   bodi.add $currency
@@ -68,17 +68,3 @@ proc fiat2sat*(self: BitcoinLightning; amount: Positive; currency: Fiat): tuple[
   bodi.addInt amount
   bodi.add '}'
   result = (metod: HttpPost, url: parseUri("https://legend.lnbits.com/api/v1/conversion"), headers: self.defaultHeaders(), body: "")
-
-
-
-
-
-
-
-
-
-
-
-
-
-

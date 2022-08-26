@@ -53,7 +53,7 @@ echo client.payInvoice("YOUR_INVOICE_HERE")    # Send (Pay).
 
 - It does not use anything from Nim standard library, very future-proof.
 - HTTPS JSON REST API, KISS. 1 file, <100 lines, zero dependencies, any target.
-- Simple API, all functions with 2 arguments max.
+- Simple minimal API, all functions with 2 arguments max.
 
 <details>
   <summary> Disclaimer </summary>

@@ -70,14 +70,14 @@ proc fiatToSat*(self: BitcoinLightning; amount: Positive; currency: Fiat): tuple
   result = (metod: HttpPost, url: parseUri("https://legend.lnbits.com/api/v1/conversion"), headers: self.defaultHeaders(), body: "")
 
 proc satToUsd*(self: BitcoinLightning; amount: Positive): tuple[metod: HttpMethod, url: Uri, headers: array[3, (string, string)], body: string] =
-  ## Sats to FIAT.
+  ## Sats to USD.
   var bodi = """{"from":"sat","to":"USD","amount":"""
   bodi.addInt amount
   bodi.add '}'
   result = (metod: HttpPost, url: parseUri("https://legend.lnbits.com/api/v1/conversion"), headers: self.defaultHeaders(), body: "")
 
 proc usdToSat*(self: BitcoinLightning; amount: Positive): tuple[metod: HttpMethod, url: Uri, headers: array[3, (string, string)], body: string] =
-  ## FIAT to Sats.
+  ## USD to Sats.
   var bodi = """{"to":"sat","from":"USD","amount":"""
   bodi.addInt amount
   bodi.add '}'

@@ -24,6 +24,10 @@
 
 https://user-images.githubusercontent.com/1653275/136722218-10bc7a5a-7194-4a38-8a54-86825bab704e.mp4
 
+- [Payments over Radio](https://twitter.com/nvk/status/1101548727460741120).
+
+![](ls2radio.jpg)
+
 
 # Shop
 
@@ -204,5 +208,5 @@ WM54DHVZQIQDVTHMPOH6FEZ4U2AU3OBPGAFTHSCYWMFE7ETKCUUOYAW24Q
 # Stars
 
 ![](https://starchart.cc/juancarlospaco/bitcoin-lightning.svg)
-:star: [@luisacosta828](https://github.com/luisacosta828 '2022-08-26')	
-:star: [@juancarlospaco](https://github.com/juancarlospaco '2022-08-26')	
+:star: [@luisacosta828](https://github.com/luisacosta828 '2022-08-26')
+:star: [@juancarlospaco](https://github.com/juancarlospaco '2022-08-26')

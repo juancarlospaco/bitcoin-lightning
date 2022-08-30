@@ -26,7 +26,7 @@ https://user-images.githubusercontent.com/1653275/136722218-10bc7a5a-7194-4a38-8
 
 - [Payments over Radio](https://twitter.com/nvk/status/1101548727460741120).
 
-![](ls2radio.jpg)
+![](https://raw.githubusercontent.com/juancarlospaco/bitcoin-lightning/nim/ln2radio.jpg)
 
 
 # Shop

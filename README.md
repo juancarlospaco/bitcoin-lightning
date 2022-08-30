@@ -75,7 +75,7 @@ echo client.payInvoice("YOUR_INVOICE_HERE")    # Send (Pay).
 
 # FAQ
 
-- I try to send a million or hundred USD/EUR and it fails?
+- I try to send a million USD/EUR and it fails?
 
 It is a **lightweight API for MICROpayments**, use Bitcoin onchain for big amounts.
 

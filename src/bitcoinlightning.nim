@@ -58,7 +58,7 @@ proc satToFiat*(self: BitcoinLightning; amount: Positive; currency: Fiat): tuple
   bodi.add """","amount":"""
   bodi.addInt amount
   bodi.add '}'
-  result = (metod: HttpPost, url: parseUri("https://legend.lnbits.com/api/v1/conversion"), headers: self.defaultHeaders(), body: "")
+  result = (metod: HttpPost, url: parseUri("https://legend.lnbits.com/api/v1/conversion"), headers: self.defaultHeaders(), body: bodi)
 
 proc fiatToSat*(self: BitcoinLightning; amount: Positive; currency: Fiat): tuple[metod: HttpMethod, url: Uri, headers: array[3, (string, string)], body: string] =
   ## FIAT to Sats.
@@ -67,18 +67,18 @@ proc fiatToSat*(self: BitcoinLightning; amount: Positive; currency: Fiat): tuple
   bodi.add """","amount":"""
   bodi.addInt amount
   bodi.add '}'
-  result = (metod: HttpPost, url: parseUri("https://legend.lnbits.com/api/v1/conversion"), headers: self.defaultHeaders(), body: "")
+  result = (metod: HttpPost, url: parseUri("https://legend.lnbits.com/api/v1/conversion"), headers: self.defaultHeaders(), body: bodi)
 
 proc satToUsd*(self: BitcoinLightning; amount: Positive): tuple[metod: HttpMethod, url: Uri, headers: array[3, (string, string)], body: string] =
   ## Sats to USD.
   var bodi = """{"from":"sat","to":"USD","amount":"""
   bodi.addInt amount
   bodi.add '}'
-  result = (metod: HttpPost, url: parseUri("https://legend.lnbits.com/api/v1/conversion"), headers: self.defaultHeaders(), body: "")
+  result = (metod: HttpPost, url: parseUri("https://legend.lnbits.com/api/v1/conversion"), headers: self.defaultHeaders(), body: bodi)
 
 proc usdToSat*(self: BitcoinLightning; amount: Positive): tuple[metod: HttpMethod, url: Uri, headers: array[3, (string, string)], body: string] =
   ## USD to Sats.
   var bodi = """{"to":"sat","from":"USD","amount":"""
   bodi.addInt amount
   bodi.add '}'
-  result = (metod: HttpPost, url: parseUri("https://legend.lnbits.com/api/v1/conversion"), headers: self.defaultHeaders(), body: "")
+  result = (metod: HttpPost, url: parseUri("https://legend.lnbits.com/api/v1/conversion"), headers: self.defaultHeaders(), body: bodi)

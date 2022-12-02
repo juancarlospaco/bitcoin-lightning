@@ -217,3 +217,4 @@ WM54DHVZQIQDVTHMPOH6FEZ4U2AU3OBPGAFTHSCYWMFE7ETKCUUOYAW24Q
 :star: [@Miqueas](https://github.com/Miqueas '2022-09-19')	
 :star: [@codehangen](https://github.com/codehangen '2022-09-27')	
 :star: [@frankmoshe](https://github.com/frankmoshe '2022-11-04')	
+:star: [@hugosenari](https://github.com/hugosenari '2022-12-02')	

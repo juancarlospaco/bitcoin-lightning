@@ -225,3 +225,4 @@ WM54DHVZQIQDVTHMPOH6FEZ4U2AU3OBPGAFTHSCYWMFE7ETKCUUOYAW24Q
 :star: [@catsuns](https://github.com/catsuns '2023-07-22')	
 :star: [@Shamulwa](https://github.com/Shamulwa '2023-09-21')	
 :star: [@xioren](https://github.com/xioren '2023-10-09')	
+:star: [@osascruz](https://github.com/osascruz '2023-10-18')	

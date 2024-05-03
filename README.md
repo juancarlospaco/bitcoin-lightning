@@ -227,3 +227,4 @@ WM54DHVZQIQDVTHMPOH6FEZ4U2AU3OBPGAFTHSCYWMFE7ETKCUUOYAW24Q
 :star: [@xioren](https://github.com/xioren '2023-10-09')	
 :star: [@osascruz](https://github.com/osascruz '2023-10-18')	
 :star: [@nichdemos](https://github.com/nichdemos '2023-12-31')	
+:star: [@lucasnuic](https://github.com/lucasnuic '2024-05-03')	
